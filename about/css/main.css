@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    background-color: #f8f4f4;
+}
+
+.nav-bar li a{
+    color: #f8f4f4;
+    text-decoration: none;
+}
+.nav-bar li{
+    display: inline;
+    margin-right: 5%;
+    font-size: 25px;
+    height: 100%;
+    color: #f8f4f4;
+}
+
+.nav-bar{
+    height: 7%;
+    padding-top: 1%;
+    background: #041938;
+    margin-bottom: 10px;
+}
+
+.title-about-impetus{
+    font-size: 40px;
+    color: #041938;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.about-fest{
+    background-color: #041938;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 65%;
+    margin-bottom: 50px;
+}
+
+.title-about-fest{
+    font-size: 35px;
+    color: #f8f4f4;
+    text-align: center;
+}
+
+.about-info{
+    font-size: 25px;
+    color: #f8f4f4;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: justify;
+}
+
+.fest-theme{
+    background-color: #041938;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 60%;
+    margin-bottom: 40px;
+}
+
+.title-impetus19{
+    font-size: 40px;
+    color: #041938;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.title-theme{
+    font-size: 35px;
+    color: #f8f4f4;
+    text-align: center;
+}
+
+.theme-info{
+    font-size: 25px;
+    color: #f8f4f4;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: justify;
+}

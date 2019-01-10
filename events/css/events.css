@@ -1,0 +1,285 @@
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900');
+
+.nav-bar li a{
+    color: #f8f4f4;
+    text-decoration: none;
+}
+.nav-bar li{
+    display: inline;
+    margin-right: 5%;
+    font-size: 25px;
+    height: 100%;
+    color: #f8f4f4;
+}
+
+.nav-bar{
+    height: 7%;
+    padding-top: 1%;
+    background: #041938;
+    margin-bottom: 10px;
+}
+
+.title-about-impetus{
+    font-size: 40px;
+    color: #041938;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.topnav {
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background-color: #041938;
+	font-family: 'Roboto';
+  }
+  
+  .topnav a {
+	float: left;
+	display: block;
+	color: #f8f4f4;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	flex: 1;
+	position: relative;
+  }
+  
+  .topnav a:hover {
+	
+	color: #d9edff;
+	border-top: 3px solid #d9edff;
+  }
+  
+  .active {
+	background-color: #041938;
+	height: auto;
+	padding: 15px;
+	color: #d9edff;
+	border-top: 3px solid #d9edff;
+  }
+  
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*
+{	box-sizing: border-box;
+	margin: 0;
+	padding: 10;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	font-style: initial; 
+}
+body
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 400;
+	color: #041938;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+h1{font-size: 48px;}
+h2{font-size: 36px;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+h5{font-size: 14px;}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+.button a{
+	text-decoration: none;
+}
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.background_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.button
+{
+	width: 205px;
+	height: 52px;
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.button::before
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 100%;
+	content: '';
+	background-color: #4867c0;
+	background-image: linear-gradient(to right, #041938, #122541, #141e2c);
+	background: #4867c0;
+	background: linear-gradient(to right, #041938, #122541, #141e2c);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.button a
+{
+	display: block;
+	position: relative;
+	line-height: 52px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #f8f4f4;
+	z-index: 1;
+	text-decoration: none;
+}
+.button:hover::before
+{
+	left: -100%;
+}
+/*********************************
+5. Events
+*********************************/
+
+.events
+{
+	width: 100%;
+	background: #f8f4f4;
+	padding-top: 115px;
+	padding-bottom: 115px;
+}
+.event:not(:last-child)
+{
+	margin-bottom: 115px;
+}
+.event_image_container
+{
+	width: 100%;
+	height: 100%;
+}
+.date_container
+{
+	position: absolute;
+	top: 24px;
+	left: 24px;
+}
+.date_container a
+{
+	display: block;
+	position: relative;
+}
+
+.event_content
+{
+	width: 100%;
+}
+.event_title
+{
+	padding: 50px;
+	font-size: 30px;
+	font-weight: 500;
+	color: #041938;
+	line-height: 1.2;
+	margin-top: 10px;
+	
+}
+
+.event_text
+{	
+	margin-top: 40px;
+	width: 50%;
+	
+}
+.event_speakers
+{
+	margin-top: 45px;
+}
+.event_speaker:not(:last-child)
+{
+	margin-bottom: 27px;
+}
+.event_speaker_image
+{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.event_speaker_content
+{
+	padding-left: 22px;
+}
+.organizer-name
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #041938;
+}
+.event_speaker_title
+{
+	font-size: 12px;
+	font-weight: 500;
+	color: #041938;
+}
+.event_buttons
+{
+	margin-top: 48px;
+}
+.event_button
+{
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+

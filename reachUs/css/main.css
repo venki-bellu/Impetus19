@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    background-color: #f8f4f4;
+}
+
+.nav-bar li a{
+    color: #f8f4f4;
+    text-decoration: none;
+}
+.nav-bar li{
+    display: inline;
+    margin-right: 5%;
+    font-size: 25px;
+    height: 100%;
+    color: #f8f4f4;
+}
+
+.nav-bar{
+    height: 7%;
+    padding-top: 1%;
+    background: #041938;
+    margin-bottom: 10px;
+}

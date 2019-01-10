@@ -1,0 +1,447 @@
+<html>
+  <head>
+    <title>IMPETUS 19.0</title>
+     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet"> 
+
+  </head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.nav-bar li a{
+    color: #f8f4f4;
+    text-decoration: none;
+}
+.nav-bar li{
+    display: inline;
+    margin-right: 5%;
+    font-size: 25px;
+    height: 100%;
+    color: #f8f4f4;
+}
+
+.nav-bar{
+    height: 7%;
+    padding-top: 1%;
+    background: #041938;
+    margin-bottom: 10px;
+}
+
+.topnav {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #041938;
+  font-family: 'Roboto';
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  flex: 1;
+  position: relative;
+}
+
+.topnav a:hover {
+  
+  color: #d9edff;
+  border-top: 3px solid #d9edff;
+}
+
+.active {
+  background-color: #041938;
+  height: auto;
+  padding: 15px;
+  color: #d9edff;
+  border-top: 3px solid #d9edff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.fontSize{
+    font-size: 15px !important;
+}
+.mainDiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto';
+}
+#days,
+#hours,
+#seconds,
+#minutes
+{
+    font-size: 45px;
+}
+.timeLayout
+{
+    width: 105px;
+    height: 105px;
+    border: 2px solid #041938;
+    /* padding: 20px; */
+    background-color: #041938;
+    color: #d9edff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.bgimg {
+    /*background-image: url('../Impetus/Image/img1.jpg');*/
+    background-color: #f8f4f4;
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #181818;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    font-family: 'ChunkFive Roman', cursive;
+
+}
+
+.middle span{
+    font-size: 50px;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.map {
+  position: relative;
+    background-color: #041938;
+    width: 100%;
+    height: 75%;
+}
+
+/* Sections Header
+--------------------------------*/
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #f82249;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: white;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+#contact .contact-info a {
+  color: white;
+}
+
+#contact .contact-info a:hover {
+  color: white;
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+
+.footer 
+{
+  padding-top: 20px;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #181818;
+  width: 100%;
+  height: 7.5%;
+  list-style-type: none;
+}
+
+
+</style>
+<body>
+  <div style="text-align:center">
+    <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../events/index.html">Events</a></li>
+        <li><a href="../gallery/index.html">Gallery</a></li>
+        <li><a href="../sponsors/index.html">Sponsors</a></li>
+        <li><a href="../reachUs/index.html">Reach Us</a></li>
+        <li><a href="../epsilon/index.html">Epsilon</a></li>
+    </ul>
+</div>
+<div class="bgimg">
+  <div class="logo">
+  </div>
+  <div class="middle">
+    <h1><span style="font-size:65px">IMPETUS 19.0</span><br>COMING SOON</h1>
+    
+
+    <div class=" mainDiv" >
+        <div id="days" class="timeLayout">          
+        </div>
+        <div id="hours" class="timeLayout">
+        </div>
+        <div id="minutes" class="timeLayout">
+        </div>
+        <div id="seconds" class="timeLayout">
+        </div>
+    </div>
+    <!-- <p id="demo" style="fontSize"></p> -->
+  </div>
+  <!-- <div class="bottomleft">
+    <p></p>
+  </div> -->
+</div>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <div class="col-md-12" style="background-color: #041938;">
+	<section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>University Visvesvaraya College of Engineering, K.R circle, Bangalore 560001</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+91 7795494348">+91 7795494348</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #contact -->
+</div>
+</div>
+
+<div class="footer">
+
+  <li>© Copyright IEEE UVCE 2019</li>
+
+</div>
+  
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+// Set the date we're counting down to
+var countDownDate = new Date("March 28, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("days").innerHTML = days + "<br / > <span class=\"fontSize\">Days</span>";
+    document.getElementById("hours").innerHTML= hours + "<br />"+ "<span class=\"fontSize\">Hours</span>";
+    document.getElementById("minutes").innerHTML=  minutes + "<br />"+ "<span class=\"fontSize\">Minutes</span>";
+    document.getElementById("seconds").innerHTML= seconds +"<br />"+ "<span class=\"fontSize\">Seconds</span>";
+
+    // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    // + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="lib/jquery/main.js"></script>
+
+</body>
+</html>
